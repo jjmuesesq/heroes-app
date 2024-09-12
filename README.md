@@ -5,3 +5,5 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ng g m auth
 ng g m heroes --routing
 ng g c heroes/pages/heroPage --inline-style --skip-tests
+
+ng add @angular/material
