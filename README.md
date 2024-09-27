@@ -10,9 +10,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 4. Ejecutar la app ```npm start``` o bien ```ng serve -o```
 
 
-ng g m auth
-ng g m heroes --routing
-ng g c heroes/pages/heroPage --inline-style --skip-tests
+* ng g m auth
+* ng g m heroes --routing
+* ng g c heroes/pages/heroPage --inline-style --skip-tests
+* ng g pipe heroes/pipe/heroImage --flat --skip-tests
 
 ng add @angular/material
 
