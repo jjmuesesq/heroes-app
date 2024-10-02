@@ -18,3 +18,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ng add @angular/material
 
 npm install --save-dev json-server - dependencia unicamente de desarrollo no de producción
+npm i --save-dev json-server@0.17.4
