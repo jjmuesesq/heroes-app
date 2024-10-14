@@ -43,6 +43,7 @@ export class NewPageComponent implements OnInit {
         switchMap( ({ id }) => this.heroesService.getHeroById( id )),
       ).subscribe( hero => {
         if(!hero) return this.router.navigateByUrl('/');
+        this.heroForm.reset( hero );
         return;
       })
   }
