@@ -142,31 +142,6 @@
       "alter_ego": "Clinton Francis Barton",
       "first_appearance": "Tales of Suspense #57",
       "characters": "Clinton Francis Barton"
-    },
-    {
-      "id": "marvel-cyclops",
-      "superhero": "Cyclops",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Scott Summers",
-      "first_appearance": "X-Men #1",
-      "characters": "Scott Summers"
-    },
-    {
-      "id": "marvel-silver",
-      "superhero": "Silver Surfer",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Norrin Radd",
-      "first_appearance": "The Fantastic Four #48",
-      "characters": "Norrin Radd"
-    },
-    {
-      "id": "rEM9CVZ",
-      "superhero": "Goku",
-      "publisher": "DC Comics",
-      "alter_ego": "Sayayin",
-      "first_appearance": "Vegita",
-      "characters": "super sayayin 1 2 3",
-      "alt_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDBRN1u3vdkwgvmqpKqN-wtK2iGP3qF-zG2g&s"
     }
   ]
 }

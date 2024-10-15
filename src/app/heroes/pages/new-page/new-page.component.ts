@@ -7,7 +7,7 @@ import { MatDialog } from "@angular/material/dialog";
 
 import { Hero, Publisher } from "../../interfaces/heroes.interface";
 import { HeroesService } from "../../services/heroes.service";
-import { switchMap } from "rxjs";
+import {filter, switchMap, tap} from "rxjs";
 
 import { ConfirmDialogComponent } from "../../components/confirm-dialog/confirm-dialog.component";
 
@@ -94,10 +94,20 @@ export class NewPageComponent implements OnInit {
       data: this.heroForm.value,
     });
 
-    dialogRef.afterClosed().subscribe(result => {
-      if ( !result ) return;
-      this.heroesService.deleteHeroById( this.currentHero.id);
-      this.router.navigate(['/heroes'])
+    dialogRef.afterClosed()
+      .pipe(
+        filter(( result:boolean ) => result),
+        switchMap( () => this.heroesService.deleteHeroById( this.currentHero.id )),
+        filter(( wasDeleted:boolean ) => wasDeleted),
+        //tap( wasDeleted => console.log({ wasDeleted})),
+      )
+      .subscribe(() => {
+        this.router.navigate(['/heroes']);
+      //if ( !result ) return;
+      //this.heroesService.deleteHeroById( this.currentHero.id)
+      //  .subscribe( wasDeleted => {
+      //      this.router.navigate(['/heroes']);
+      //  })
     });
   }
 
